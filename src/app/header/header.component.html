@@ -1,0 +1,38 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Live-Posts</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a routerLink="/post-list">Home</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a routerLink="/auth"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        </li>
+        <li><a routerLink="/auth" (click)="login()"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a routerLink="/logout" (click)="logout()"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div><input type="button" value="Retrieve birefcasse" (click)="getBriefcase()"></div>
+
+<!--
+<div><input type="button" value="Generate state value" (click)="generateState(30)"></div>
+<div id="stateValue" [innerHTML]="stateValue"></div>
+<div><input type="button" value="Generate code verifer value" (click)="generateCodeVerifer()"></div>
+<div id="stateValue" [innerHTML]="codeVeriferValue"></div>
+<div><input type="button" value="Generate code challenge" (click)="generateCodeChallenge()"></div>
+<div id="stateValue" [innerHTML]="codeChallengeValue"></div>
+<div><input type="button" value="Generate auth code" (click)="getAuthorizationCode()"></div>
+<div><input type="button" value="Generate access token" (click)="getAccessToken()"></div>
+<div><input type="button" value="Generate All" (click)="generateStateAndCodeAndVerifer()"></div>
+-->
+
